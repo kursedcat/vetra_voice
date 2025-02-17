@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("DS_TOKEN")
 ALLOWED_ROLES = list(map(int, os.getenv("ALLOWED_ROLES").split(",")))  # Список ID ролей
 LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID"))  # ID лог-канала
 VOICE_CHANNEL_ID = int(os.getenv("VOICE_CHANNEL_ID"))
